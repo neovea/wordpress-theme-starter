@@ -9,4 +9,20 @@
  * Tags:
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+
+ DO NOT WRITE DIRECTLY IN THIS FILE !
+ It's purpose is to call a unique css file, main.css, which makes all the imports
+
+ If you need to had your own styles, you'd better prefer using the given child theme, or create your own SASS based stylesheet,
+ then import it in sass/mail.scss, the compile it with COMPASS. But I recommend using a child theme to avoid any
+ data loose when updating the theme to an earlier version.
+
+ For any question, ask it on the main theme page on WordPress.org or GitHub.
+
+ Cheers !
+
  */
+@import url(stylesheets/main.css);
+
+
