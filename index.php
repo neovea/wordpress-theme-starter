@@ -19,6 +19,7 @@
                 <?php the_content(); ?>
             </div>
         </div>
+        <?php edit_post_link(__('Edit', THEME_TEXTDOMAIN), '<p>', '</p>'); ?>
     <?php endwhile; endif; ?>
     </div>
     <div class="three columns">

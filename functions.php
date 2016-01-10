@@ -11,9 +11,11 @@ define('THEME_TEXTDOMAIN', 'beyond');
 function byd_scripts() {
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', [], '3.0.2', 'all');
     wp_register_style('skeleton', get_template_directory_uri() . '/css/skeleton.css', [], '2.0.4', 'all');
+    wp_register_style('style', get_template_directory_uri() . '/style.css', [], '1.0', 'all');
 
     wp_enqueue_style('normalize');
     wp_enqueue_style('skeleton');
+    wp_enqueue_style('style');
 }
 add_action('wp_enqueue_scripts', 'byd_scripts');
 

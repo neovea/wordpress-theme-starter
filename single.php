@@ -11,15 +11,17 @@
                             <span class="post-data"><?php _e('Posted on', THEME_TEXTDOMAIN); ?> <?php the_time('j F Y') ?></span>
                             <span class="post-author"><?php _e('by', THEME_TEXTDOMAIN); ?> <?php the_author() ?></span> |
                             <span class="post-categories"><?php _e('Categories', THEME_TEXTDOMAIN); ?> <?php the_category(', ') ?></span> |
-                            <span class="post-comments-link"><?php comments_popup_link(__('Pas de commentaires', THEME_TEXTDOMAIN), __('1 Commentaire', THEME_TEXTDOMAIN), __('% Commentaires', THEME_TEXTDOMAIN)); ?></span>
                             <span class="post-edit-link"><?php edit_post_link(__('Edit', THEME_TEXTDOMAIN), ' &#124; ', ''); ?></span>
                         </p>
                     </div>
-                    <div class="post-content post-excerpt">
-                        <?php the_excerpt(); ?>
+                    <div class="post-content">
+                        <?php the_content(); ?>
                     </div>
                 </div>
                 <?php edit_post_link(__('Edit', THEME_TEXTDOMAIN), '<p>', '</p>'); ?>
+                <div class="comments-template">
+                    <?php comments_template(); ?>
+                </div>
             <?php endwhile; endif; ?>
         </div>
         <div class="three columns">
