@@ -1,6 +1,5 @@
 <ul>
     <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
-    <?php endif; ?>
     <li id="search">
         <?php include(TEMPLATEPATH . '/searchform.php'); ?>
     </li>
@@ -68,5 +67,6 @@
             ?>
         </ul>
     </li>
+    <?php endif; ?>
 </ul>
 
