@@ -23,7 +23,10 @@
                     <?php edit_post_link(__('Edit', THEME_TEXTDOMAIN), '<p>', '</p>'); ?>
                 <?php endwhile; ?>
                 <div class="navigation"> <?php posts_nav_link(' - ','page suivante','page pr&eacute;c&eacute;dente'); ?> </div>
-            <?php endif; ?>
+            <?php else: ?>
+                <h2>Oooopppsss...</h2> <p><?php _e('Sorry but what you\'re looking for is not here...', THEME_TEXTDOMAIN); ?></p>
+                <?php include (TEMPLATEPATH . "/searchform.php");
+            endif; ?>
         </div>
         <div class="three columns">
             <div class="sidebar">

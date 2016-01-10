@@ -25,7 +25,10 @@
                     </div>
                 <?php endwhile; ?>
             <?php previous_post_link() ?> <?php next_post_link() ?>
-        <?php endif; ?>
+            <?php else: ?>
+                <h2>Oooopppsss...</h2> <p><?php _e('Sorry but what you\'re looking for is not here...', THEME_TEXTDOMAIN); ?></p>
+                <?php include (TEMPLATEPATH . "/searchform.php");
+            endif; ?>
         </div>
         <div class="three columns">
             <div class="sidebar">
