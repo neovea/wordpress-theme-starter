@@ -5,17 +5,17 @@
         <div class="row">
             <div class="four columns">
                 <ul>
-                    <?php dynamic_sidebar('footer_1'); ?>
+                    <?php if ( is_active_sidebar('footer_1') ) dynamic_sidebar('footer_1'); ?>
                 </ul>
             </div>
             <div class="four columns">
                 <ul>
-                    <?php dynamic_sidebar('footer_2'); ?>
+                    <?php if ( is_active_sidebar('footer_2') ) dynamic_sidebar('footer_2'); ?>
                 </ul>
             </div>
             <div class="four columns">
                 <ul>
-                    <?php dynamic_sidebar('footer_3'); ?>
+                    <?php if ( is_active_sidebar('footer_3') ) dynamic_sidebar('footer_3'); ?>
                 </ul>
             </div>
         </div>
@@ -30,5 +30,6 @@
         </div>
     </div>
 </div>
+<?php wp_footer(); ?>
 </body>
 </html>
