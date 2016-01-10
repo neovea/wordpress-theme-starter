@@ -1,3 +1,8 @@
 /**
- * Created by Franck on 09/01/2016.
+ * Main Js File
  */
+
+jQuery(document).ready(function($){
+
+   console.log('Hello World !');
+});
