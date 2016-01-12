@@ -12,8 +12,8 @@ class BydInit
 
     static function byd_init()
     {
-
-        add_action( 'add_meta_boxes', [new BydMetabox, 'byd_add_metabox'] );
-        add_action( 'save_post', [new BydMetabox, 'byd_save_metaboxes'] );
+        add_theme_support('post-thumbnails');
+        add_action( 'add_meta_boxes', ['BydMetabox', 'byd_add_metabox'] );
+        add_action( 'save_post', ['BydMetabox', 'byd_save_metaboxes'] );
     }
 }

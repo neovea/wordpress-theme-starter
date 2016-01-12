@@ -2,7 +2,7 @@
 $beyond_post_meta = get_post_meta($post->ID);
 ?>
     <div class="row">
-        <div class="nine columns">
+        <div class="twelve columns">
             <?php if ( have_posts() ) :
                 while ( have_posts() ) : the_post(); ?>
                     <div id="post-<?php the_ID(); ?>" class="post post-item">
@@ -32,11 +32,6 @@ $beyond_post_meta = get_post_meta($post->ID);
                 <p><?php _e( 'Sorry but what you\'re looking for is not here...', THEME_TEXTDOMAIN ); ?></p>
                 <?php include( TEMPLATEPATH . "/searchform.php" );
             endif; ?>
-        </div>
-        <div class="three columns">
-            <div class="sidebar">
-                <?php dynamic_sidebar( 'blog' ); ?>
-            </div>
         </div>
     </div>
 <?php get_footer(); ?>

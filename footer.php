@@ -22,7 +22,7 @@
         <div class="row">
             <div class="twelve columns">
                 <div class="credits">
-                    <p> Copyright &#169; <?php print(date(Y)); ?> - <?php bloginfo('name'); ?>
+                    <p> Copyright &#169; <?php print(date('Y')); ?> - <?php bloginfo('name'); ?>
                         - <a href="<?php bloginfo('rss2_url'); ?>"><?php _e('Posts RSS feed', THEME_TEXTDOMAIN); ?></a>
                         - <a href="<?php bloginfo('comments_rss2_url'); ?>"><?php _e('Comments RSS feed', THEME_TEXTDOMAIN); ?></a></p>
                 </div>
