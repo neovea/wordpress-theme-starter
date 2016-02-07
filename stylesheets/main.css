@@ -3,11 +3,11 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 1, ../sass/_navigation.scss */
-#menu-top-navigation {
+#menu-header {
   text-align: right;
 }
 /* line 3, ../sass/_navigation.scss */
-#menu-top-navigation > li {
+#menu-header > li {
   display: inline-block;
   padding: 5px 8px;
 }

@@ -16,13 +16,15 @@ function byd_scripts()
     wp_register_style( 'skeleton', get_template_directory_uri() . '/css/skeleton.css', [], '2.0.4', 'all' );
     wp_register_style( 'style', get_template_directory_uri() . '/style.css', [], '1.0', 'all' );
 
-    wp_register_script( 'scripts', get_template_directory_uri() . '/js/main.js', ['jquery'], '1.0', TRUE );
+    wp_register_script( 'parallax', get_template_directory_uri() . '/js/jquery-parallax.js', ['jquery'], '1.1.3', TRUE );
+    wp_register_script( 'beyonf', get_template_directory_uri() . '/js/main.js', ['jquery','parallax'], '1.0', TRUE );
 
     wp_enqueue_style( 'normalize' );
     wp_enqueue_style( 'skeleton' );
     wp_enqueue_style( 'style' );
 
-    wp_enqueue_script( 'scripts' );
+    wp_enqueue_script( 'parallax' );
+    wp_enqueue_script( 'beyonf' );
 }
 
 add_action( 'wp_enqueue_scripts', 'byd_scripts' );
